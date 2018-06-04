@@ -1,17 +1,17 @@
 package com.example.ruairidhgrass.fruitmachine.fruitMachine;
 
 public enum Fruit {
-    CHERRY("Cherry"),
-    LEMON("Lemon"),
-    PLUM("Plum");
+    CHERRY(30),
+    LEMON(20),
+    PLUM(10);
 
-    private String value;
+    private int value;
 
-    private Fruit(String value) {
+    private Fruit(int value) {
         this.value = value;
     }
 
-    public String getValue() {
+    public int getValue() {
         return this.value;
     }
 

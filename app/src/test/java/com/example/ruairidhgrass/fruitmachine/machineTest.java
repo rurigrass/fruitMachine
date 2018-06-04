@@ -1,5 +1,7 @@
 package com.example.ruairidhgrass.fruitmachine;
 
+import android.util.Range;
+
 import com.example.ruairidhgrass.fruitmachine.fruitMachine.Fruit;
 import com.example.ruairidhgrass.fruitmachine.fruitMachine.Machine;
 
@@ -19,14 +21,11 @@ public class machineTest {
     Machine machine;
     Fruit[] fruits;
 
-
     @Before
     public void before() {
         machine = new Machine(10);
         fruits = new Fruit[]{CHERRY, CHERRY, CHERRY};
-
     }
-
 
     @Test
     public void canGetRandomFruit() {
@@ -39,6 +38,21 @@ public class machineTest {
         Fruit[] outcome = machine.spin();
         assertNotNull(outcome);
     }
+
+    @Test
+    public void canWin() {
+        assertNotNull(machine.win());
+    }
+
+//    @Test
+//    public void canWin(){
+//        assertEquals(0, machine.win());
+//    }
+
+//    @Test
+//    public void canGetArray() {
+//        assertEquals("cherrycherrycherry", machine.getArray());
+//    }
 
 
 }
