@@ -28,13 +28,14 @@ public class Machine extends Player {
 
     public int win() {
         Fruit[] cherryArray = {Fruit.CHERRY, Fruit.CHERRY, Fruit.CHERRY};
-        Fruit[] lemonArray = {Fruit.LEMON, Fruit.LEMON, Fruit.LEMON};
         Fruit[] plumArray = {Fruit.PLUM, Fruit.PLUM, Fruit.PLUM};
+        Fruit[] lemonArray = {Fruit.LEMON, Fruit.LEMON, Fruit.LEMON};
         Fruit[] jackpot = this.spin();
 
         if (jackpot.equals(cherryArray)){return Winner.CHERRYWINS.getWinnings();}
+        else if (jackpot.equals(plumArray)){return Winner.PLUMWINS.getWinnings();}
+        else if (jackpot.equals(lemonArray)){return Winner.LEMONWINS.getWinnings();}
         return 0;
-
     }
 
 
