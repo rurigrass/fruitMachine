@@ -2,8 +2,8 @@ package com.example.ruairidhgrass.fruitmachine.fruitMachine;
 
 public enum Winner {
     CHERRYWINS(30),
-    PLUMWINS(20),
-    LEMONWINS(10);
+    LEMONWINS(10),
+    PLUMWINS(20);
 
     private int winnings;
 

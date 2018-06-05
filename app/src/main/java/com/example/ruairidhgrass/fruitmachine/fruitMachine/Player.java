@@ -9,7 +9,12 @@ public class Player {
     }
 
 
-    public int CheckCoins() {
+    public int checkCoins() {
         return this.coins;
     }
+
+    public int betOne() {
+        return this.coins -= 1;
+    }
+
 }

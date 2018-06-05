@@ -34,16 +34,16 @@ public class machineTest {
         assertNotNull(randomFruit);
     }
 
-    @Test
-    public void canSpin() {
-        Fruit[] outcome = machine.spin();
-        assertNotNull(outcome);
-    }
-
-    @Test
-    public void canWin() {
-        assertNotNull(machine.win());
-    }
+//    @Test
+//    public void canSpin() {
+//        Fruit[] outcome = machine.spin();
+//        assertNotNull(outcome);
+//    }
+//
+//    @Test
+//    public void canWin() {
+//        assertNotNull(machine.win());
+//    }
 
 //    @Test
 //    public void canWin(){
