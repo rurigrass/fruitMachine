@@ -1,6 +1,6 @@
 package com.example.ruairidhgrass.fruitmachine.fruitMachine;
 
-public abstract class Player {
+public class Player {
 
     protected int coins;
 
@@ -8,4 +8,8 @@ public abstract class Player {
         this.coins = coins;
     }
 
+
+    public int CheckCoins() {
+        return this.coins;
+    }
 }
