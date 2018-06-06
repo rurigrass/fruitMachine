@@ -9,7 +9,7 @@ public class Runner {
         Machine machine = new Machine(100);
         Player player = new Player(20);
 
-        Integer playerInput;
+        int playerInput;
         boolean runGame = true;
 
         while (runGame) {
@@ -17,7 +17,7 @@ public class Runner {
             // Set player instructions
             System.out.println("                            ");
             System.out.println("@@ CODECLAN FRUIT MACHINE @@");
-            System.out.println("Enter 1 to play : 2 to exit!");
+            System.out.println("Enter 1 to play : 2 to cash out!");
 
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Runner {
 
             // player exits game
             if (playerInput == 2) {
-                System.out.println("Game Over - Collect any Payout!!!");
+                System.out.println("Game Over - Collect your £ " + machine.player.checkCoins());
                 runGame = false;
             }
 
