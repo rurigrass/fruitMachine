@@ -1,9 +1,10 @@
 package com.example.ruairidhgrass.fruitmachine.fruitMachine;
 
 public enum Fruit {
+    BAR(50),
     CHERRY(30),
-    LEMON(20),
-    PLUM(10);
+    PLUM(20),
+    LEMON(10);
 
     private int value;
 

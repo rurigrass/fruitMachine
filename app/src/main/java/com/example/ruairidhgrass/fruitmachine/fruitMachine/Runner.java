@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Runner {
 
+
+
+
     public static void main(String[] args) {
 
         Machine machine = new Machine(100);
@@ -11,6 +14,7 @@ public class Runner {
 
         int playerInput;
         boolean runGame = true;
+
 
         while (runGame) {
 
@@ -22,6 +26,11 @@ public class Runner {
             // Get player input
             Scanner getPlayerInput = new Scanner(System.in);
             playerInput = getPlayerInput.nextInt();
+            //
+
+            if (playerInput != 1 && playerInput != 2 ){
+                System.out.println("Invalid input - try again");
+            }
 
             // player exits game
             if (playerInput == 2) {
@@ -33,13 +42,13 @@ public class Runner {
             if (playerInput == 1) {
 
                 // exit clause if no credit
-                if (player.coins == 0) {
+                if (machine.player.checkCoins() <= 0) {
                     System.out.println("Credit Required - Game Over - Collect any Payout!!!");
                     runGame = false;
                 }
 
                 // player spins reel
-                else if (player.coins != 0) {
+                else if (machine.player.checkCoins() > 0) {
 
                     machine.spin();
                     machine.play();
