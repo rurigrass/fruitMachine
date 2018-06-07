@@ -23,9 +23,9 @@ public class YangMachine {
         this.prefix = "@@ CODECLAN FRUIT MACHINE @@";
         this.line = "=================================";
         this.pipe = "<|>";
-        this.winnerMessage = "Congratulations, you have won £";
+        this.winnerMessage = "Congratulations, you have won ¥";
         this.losingMessage = "No wins, try again, ";
-        this.postfix = "Your remaining credit is £";
+        this.postfix = "Your remaining credit is ¥";
         this.player = new Player(20);
 
     }
@@ -80,31 +80,31 @@ public class YangMachine {
         System.out.println(line);
 
         if ((reelOne == Yang.¥) && (reelTwo == Yang.¥) && (reelThree == Yang.¥)) {
-            player.coins += Winner.CHERRYWINS.getWinnings();
+            player.coins += Winner.YANGWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
-            System.out.println(winnerMessage + Winner.CHERRYWINS.getWinnings());
+            System.out.println(winnerMessage + Winner.YANGWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
         } else if ((reelOne == Yang.£) && (reelTwo == Yang.£) && (reelThree == Yang.£)) {
-            player.coins += Winner.LEMONWINS.getWinnings();
+            player.coins += Winner.POUNDWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
-            System.out.println(winnerMessage + Winner.LEMONWINS.getWinnings());
+            System.out.println(winnerMessage + Winner.POUNDWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
         } else if ((reelOne == Yang.$) && (reelTwo == Yang.$) && (reelThree == Yang.$)) {
-            player.coins += Winner.PLUMWINS.getWinnings();
+            player.coins += Winner.DOLLARWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
-            System.out.println(winnerMessage + Winner.PLUMWINS.getWinnings());
+            System.out.println(winnerMessage + Winner.DOLLARWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
         } else if ((reelOne == Yang.€) && (reelTwo == Yang.€) && (reelThree == Yang.€)) {
-            player.coins += Winner.PLUMWINS.getWinnings();
+            player.coins += Winner.EUROWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe);
             System.out.println(line);
-            System.out.println(winnerMessage + Winner.PLUMWINS.getWinnings());
+            System.out.println(winnerMessage + Winner.EUROWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
         } else {

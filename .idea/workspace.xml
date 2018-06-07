@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24cea7a-db9c-42c2-a3b9-859e036cdce2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Winner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Winner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -95,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YangMachine.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YangMachine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+            <state relative-caret-position="300">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="e#1072#1073#0" expanded="true" />
                 <element signature="e#1118#1119#0" expanded="true" />
@@ -2202,8 +2200,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/RunnerTwo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Machine5.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Yang.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java" />
       </list>
     </option>
   </component>
@@ -2815,10 +2813,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/YangMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+        <state relative-caret-position="300">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#1072#1073#0" expanded="true" />
             <element signature="e#1118#1119#0" expanded="true" />
@@ -2833,14 +2839,6 @@
             <element signature="e#1552#1553#0" expanded="true" />
             <element signature="e#1584#1585#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ruairidhgrass/fruitmachine/fruitMachine/Winner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
