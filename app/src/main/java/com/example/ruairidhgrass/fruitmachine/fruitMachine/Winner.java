@@ -13,7 +13,13 @@ public enum Winner {
     YOUGOTFOURPLUM(10),
     YOUGOTFOURLEMON(5),
     YOUGOTTHREE(3),
-    YOUGOTONEBAR(5);
+    YOUGOTONEBAR(5),
+
+    YANGWINS(20),
+    POUNDWINS(15),
+    DOLLARWINS(10),
+    EUROWINS(5);
+
 
     private int winnings;
 
