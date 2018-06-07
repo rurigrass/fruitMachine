@@ -26,19 +26,19 @@ public class Machine {
 
     public Machine(int coins) {
         this.coins = coins;
-        this.prefix = "@@ CODECLAN FRUIT MACHINE @@";
+        this.prefix = "$$~|~ CODECLAN ~|~ FRUIT ~|~ MACHINE ~|~$$";
         this.line = "==========================================";
         this.pipe = "<|>";
-        this.winnerMessage = "you have won £";
-        this.losingMessage = "No wins, try again, ";
-        this.postfix = "Your remaining credit is £";
+        this.winnerMessage = "   you have won £";
+        this.losingMessage = "   No wins, try again, ";
+        this.postfix = "   Your remaining credit is £";
         this.player = new Player(10);
 
 //        this.outcome = this.spin();
     }
 
     public Fruit getRandomFruit() {
-        Fruit[] fruits = {Fruit.BAR, Fruit.CHERRY, Fruit.CHERRY, Fruit.PLUM, Fruit.PLUM, Fruit.PLUM, Fruit.LEMON, Fruit.LEMON, Fruit.LEMON, Fruit.LEMON};
+        Fruit[] fruits = {Fruit.CHERRY, Fruit.CHERRY, Fruit.PLUM, Fruit.PLUM, Fruit.PLUM, Fruit.LEMON, Fruit.LEMON, Fruit.LEMON, Fruit.LEMON};
         Random rand = new Random();
         int index = rand.nextInt(fruits.length);
         return fruits[index];
@@ -112,6 +112,7 @@ public class Machine {
             player.coins += Winner.CHERRYWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
+            System.out.println("   Congratulations, you got five Bars in a row!");
             System.out.println(winnerMessage + Winner.BARWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -121,6 +122,7 @@ public class Machine {
             player.coins += Winner.CHERRYWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
+            System.out.println("   Congratulations, you got five Cherries in a row!");
             System.out.println(winnerMessage + Winner.CHERRYWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -130,6 +132,7 @@ public class Machine {
             player.coins += Winner.LEMONWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
+            System.out.println("   Congratulations, you got five Lemons in a row!");
             System.out.println(winnerMessage + Winner.LEMONWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -139,6 +142,7 @@ public class Machine {
             player.coins += Winner.PLUMWINS.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
+            System.out.println("   Congratulations, you got five Plums in a row!");
             System.out.println(winnerMessage + Winner.PLUMWINS.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -148,7 +152,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURCHERRYINAROW.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Cherries in a row!");
+            System.out.println("   Congratulations, you got four Cherries in a row!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURCHERRYINAROW.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -158,7 +162,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURLEMONINAROW.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Lemons in a row!");
+            System.out.println("   Congratulations, you got four Lemons in a row!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURLEMONINAROW.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -168,7 +172,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURPLUMINAROW.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Plums in a row!");
+            System.out.println("   Congratulations, you got four Plums in a row!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURPLUMINAROW.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -178,7 +182,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURCHERRY.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Cherries!");
+            System.out.println("   Congratulations, you got four Cherries!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURCHERRY.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -188,7 +192,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURLEMON.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Lemons!");
+            System.out.println("   Congratulations, you got four Lemons!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURLEMON.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -198,7 +202,7 @@ public class Machine {
             player.coins += Winner.YOUGOTFOURPLUM.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got four Plums!");
+            System.out.println("   Congratulations, you got four Plums!");
             System.out.println(winnerMessage + Winner.YOUGOTFOURPLUM.getWinnings());
             System.out.println(postfix + player.checkCoins());
 
@@ -210,9 +214,19 @@ public class Machine {
             player.coins += Winner.YOUGOTTHREE.getWinnings();
             System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
             System.out.println(line);
-            System.out.println("Congratulations, you got Three " + reelThree + "S in a row!");
+            System.out.println("   Congratulations, you got Three " + reelThree + "S in a row!");
             System.out.println(winnerMessage + Winner.YOUGOTTHREE.getWinnings());
             System.out.println(postfix + player.checkCoins());
+
+            //ONE BAR
+
+//        } else if ((reelOne) == (Fruit.BAR) || (reelTwo) == (Fruit.BAR) || (reelThree) == (Fruit.BAR) || (reelFour) == (Fruit.BAR) || (reelFive) == (Fruit.BAR)) {
+//            player.coins += Winner.YOUGOTONEBAR.getWinnings();
+//            System.out.println(pipe + reelOne + pipe + reelTwo + pipe + reelThree + pipe + reelFour + pipe + reelFive + pipe);
+//            System.out.println(line);
+//            System.out.println("Congratulations, you got one Bar!");
+//            System.out.println(winnerMessage + Winner.YOUGOTONEBAR.getWinnings());
+//            System.out.println(postfix + player.checkCoins());
 
             // LOSE
 

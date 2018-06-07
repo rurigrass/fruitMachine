@@ -12,7 +12,8 @@ public enum Winner {
     YOUGOTFOURCHERRY(15),
     YOUGOTFOURPLUM(10),
     YOUGOTFOURLEMON(5),
-    YOUGOTTHREE(1);
+    YOUGOTTHREE(3),
+    YOUGOTONEBAR(5);
 
     private int winnings;
 

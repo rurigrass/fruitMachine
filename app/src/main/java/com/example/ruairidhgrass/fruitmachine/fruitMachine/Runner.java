@@ -9,11 +9,12 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Machine machine = new Machine(100);
         Player player = new Player(20);
+        Machine machine = new Machine(100);
 
         int playerInput;
         boolean runGame = true;
+        int lines;
 
 
         while (runGame) {
@@ -34,7 +35,7 @@ public class Runner {
 
             // player exits game
             if (playerInput == 2) {
-                System.out.println("Game Over - Collect your £ " + machine.player.checkCoins());
+                System.out.println("Game Over - Collect your £ " + player.checkCoins());
                 runGame = false;
             }
 
@@ -42,16 +43,21 @@ public class Runner {
             if (playerInput == 1) {
 
                 // exit clause if no credit
-                if (machine.player.checkCoins() <= 0) {
+                if (player.checkCoins() <= 0) {
                     System.out.println("Credit Required - Game Over - Collect any Payout!!!");
                     runGame = false;
                 }
 
                 // player spins reel
-                else if (machine.player.checkCoins() > 0) {
+                else if (player.checkCoins() > 0) {
 
                     machine.spin();
                     machine.play();
+
+                    //space
+
+                    for (lines = 0; lines <=1; lines++)
+                        System.out.println();
 
                 }
 
